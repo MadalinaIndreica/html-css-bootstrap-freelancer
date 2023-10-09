@@ -1,0 +1,73 @@
+/* CUSTOM PROPRIETIES */
+
+:root {
+     
+  --primary-col: #2C3E50;
+  --bg-color:#1ABC9C;
+  --secondary-col:#3A546D;
+    
+}
+img{
+    max-width: 100%;
+}
+/* HEADER */
+header{
+    background-color: #2C3E50;
+    color: white;
+    
+
+}
+.header_content{
+   display: flex;
+   justify-content: space-between;
+}
+li{
+    list-style-type: none;
+}
+header ul {
+    display: flex;
+    gap:1rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (min-width:540px) {
+    .container{
+     max-width: 720px;
+    }
+}
+/* /HEADER */
+
+/* MAIN */
+#main-section {
+    background-color: #1ABC9C;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+#about-section {
+    background-color:#1ABC9C;
+}
+
+/* /MAIN */
+
+/* FOOTER */
+footer {
+    text-align: center;
+}
+#footer_top {
+    background-color: #3A546D;
+    color: white;
+}
+#footer_bottom{
+    background-color: #2C3E50;
+    color: white;
+}
+/* /FOOTER */

@@ -17,20 +17,38 @@ header{
     
 
 }
+.header_nav {
+   text-align: center;
+}
+.header_nav {
+    display: none;
+}
 .header_content{
    display: flex;
    justify-content: space-between;
+   align-items: center;
+   min-height: 50px;
 }
 li{
     list-style-type: none;
 }
 header ul {
     display: flex;
+    align-items: center;
     gap:1rem;
+    margin-top: 1rem;
 }
 a {
     text-decoration: none;
     color: inherit;
+}
+@media screen and (min-width:768px){
+    .header-icon {
+        display: none;
+    }
+    .header_nav {
+        display: block;
+    }
 }
 
 @media screen and (min-width:540px) {
@@ -41,9 +59,35 @@ a {
 /* /HEADER */
 
 /* MAIN */
+.avatar-img {
+    max-width: 40%;
+}
+@media screen and (min-width:768px) {
+    .avatar-img{
+     max-width: 250px;
+    }
+}
+.star-divider {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.star-line {
+    width: 35%;
+    display: inline-block;
+    border: 2px solid;
+    opacity: 1;
+    border-radius: 5px;
+}
+.fa-star {
+    margin: 0 auto;
+}
+
+
 #main-section {
     background-color: #1ABC9C;
     text-align: center;
+    color: white;
 }
 h2 {
     text-align: center;
@@ -55,7 +99,19 @@ h2 {
 #about-section {
     background-color:#1ABC9C;
 }
-
+.ms_btn_outline{
+    width: 20%;
+}
+.ms_form-control{
+    border-left: 0;
+    border-right: 0;
+    border-top:0;
+    border-radius: 0;
+}
+.ms_btn-send {
+    background-color: var(--bg-color);
+    color: white;
+}
 /* /MAIN */
 
 /* FOOTER */
@@ -65,6 +121,15 @@ footer {
 #footer_top {
     background-color: #3A546D;
     color: white;
+}
+.footer-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+
 }
 #footer_bottom{
     background-color: #2C3E50;
